@@ -21,17 +21,17 @@
     </div>
     <section class="operations">
       <div class="operation">
-        <button id="fetch-all">Fetch all</button>
+        <button id="fetch-all" onclick="getAllCharacters()">Fetch all</button>
       </div>
       <div class="operation">
         <label for="character-id">Search by ID: </label>
         <input type="text" name="character-id">
-        <button id="fetch-one">Fetch one</button>
+        <button id="fetch-one" onclick="getCharacterById()">Fetch one</button>
       </div>
       <div class="operation delete">
         <label for="character-id-delete">Delete by ID: </label>
         <input type="text" name="character-id-delete">
-        <button id="delete-one">Delete one</button>
+        <button id="delete-one" onclick="deleteCharacterById()">Delete one</button>
       </div>
 
     </section>
@@ -56,7 +56,7 @@
           <label for="cartoon">Is a Cartoon: </label>
           <input name="cartoon" type="checkbox">
         </div>
-        <button id="send-data">Create</button>
+        <button id="send-data" onclick="createCharacter()">Create</button>
       </form>
     </section>
     <section class="form-container">
@@ -82,7 +82,7 @@
           <label for="cartoon">Is a Cartoon: </label>
           <input name="cartoon" type="checkbox">
         </div>
-        <button id="send-data">Update</button>
+        <button id="send-data" onclick="updateResource()">Update</button>
       </form>
     </section>
   </section>

@@ -47,7 +47,7 @@ class APIHandler {
 
   async editCharacterById(id, characterData) {
     try {
-      const response = await axios.put(`${this.baseURL}/characters/${id}`, characterData);
+      const response = await axios.patch(`${this.baseURL}/characters/${id}`, characterData);
       return response.data;
     } catch (error) {
       console.error(`Error editing character with ID ${id}:`, error);
